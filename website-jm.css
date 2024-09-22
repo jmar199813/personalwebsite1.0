@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Selects all */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Centres the game canvas and styles it */
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+#topBar {
+  margin-bottom: 200px;
+  padding-bottom: 200px;
+}
+
+/* Text grid styling */
+#textGrid {
+  margin-top: 100px;
+  padding-top: 200px;
+  /*display: grid;*/
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(2, auto); /* 2 rows */
+  gap: 10px; /* Space between divs */
+  margin-bottom: 20px; /* Space between text grid and info box */
+  max-width: 800px; /* To fit with canvas width */
+  width: 100%; /* Full width */
+  color: white;
+} 
+
+/* Editable div styling */
+.bio1 {
+  width: 100%; /* Full width of the grid cell */
+  padding: 10px; /* Padding inside the div */
+  /*border: 1px solid #ccc;*/ /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #000; /* Dark background color */
+  color: green; /* Text color */
+  font-size: 16px; /* Font size */
+  font-family: 'Press Start 2P';
+  text-align: center; /* Center text */
+  display: flex; /* Flexbox to center text */
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  margin-left: -20px;
+  margin-bottom: 20px;
+  min-height: 100px; /* Optional: Ensure minimum height if needed */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+.bio2 {
+  width: 100%; /* Full width of the grid cell */
+  padding: 10px; /* Padding inside the div */
+  /*border: 1px solid #ccc;*/ /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #000; /* Dark background color */
+  color: green; /* Text color */
+  font-size: 16px; /* Font size */
+  font-family: 'Press Start 2P';
+  text-align: center; /* Center text */
+  display: flex; /* Flexbox to center text */
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  margin-left: -20px;
+  margin-bottom: 20px;
+  min-height: 100px; /* Optional: Ensure minimum height if needed */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+.bio3 {
+  width: 100%; /* Full width of the grid cell */
+  padding: 10px; /* Padding inside the div */
+  /*border: 1px solid #ccc;*/ /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #000; /* Dark background color */
+  color: green; /* Text color */
+  font-size: 16px; /* Font size */
+  font-family: 'Press Start 2P';
+  text-align: center; /* Center text */
+  display: flex; /* Flexbox to center text */
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  margin-left: -20px;
+  margin-bottom: 20px;
+  min-height: 100px; /* Optional: Ensure minimum height if needed */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+.bio4 {
+  width: 100%; /* Full width of the grid cell */
+  padding: 10px; /* Padding inside the div */
+  /*border: 1px solid #ccc;*/ /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #000; /* Dark background color */
+  color: green; /* Text color */
+  font-size: 16px; /* Font size */
+  font-family: 'Press Start 2P';
+  text-align: center; /* Center text */
+  display: flex; /* Flexbox to center text */
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  margin-left: -20px;
+  margin-bottom: 20px;
+  min-height: 100px; /* Optional: Ensure minimum height if needed */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+/* Info box styling */
+#infoBox {
+  text-align: center;
+  margin-bottom: 20px; /* Space between info box and canvas */
+  color: #fff; /* Text color */
+  font-size: 18px; /* Font size */
+  max-width: 800px; /* Maximum width to fit canvas */
+}
+
+/* Instructions text styling */
+#instructions {
+  margin: 0;
+  color: green;
+  font-family: 'Press Start 2P';
+}
+
+/* Game container styling */
+#gameContainer {
+  display: flex;
+  align-items: center; /* Center vertically */
+}
+
+/* Left and right text boxes styling */
+#leftBox, #rightBox {
+  width: 200px; /* Width of the text boxes */
+  color: #fff; /* Text color */
+  font-size: 16px; /* Font size */
+  padding: 10px; /* Padding inside the text boxes */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+#leftBox {
+  text-align: left;
+  color: green;
+  font-family: 'Press Start 2P';
+  font-size: 12px;
+}
+
+#rightBox {
+  text-align: right;
+  color: green;
+  font-family: 'Press Start 2P';
+  font-size: 12px;
+}
+
+/* Game canvas style */
+canvas {
+  border: 1px solid #fff;
+  margin: 0 20px; /* Space between canvas and text boxes */
+}
+
+/* Start button style */
+#startButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: 'Press Start 2P';
+  color: green;
+  background-color: #000;
+  border: none;
+/*  border-radius: 5px; */
+  cursor: pointer;
+  outline: 3px solid green;
+}
+
+/* Retry button style */
+#retryButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: 'Press Start 2P';
+  color: green;
+  background-color: #000;
+  border: none;
+/*  border-radius: 5px; */
+  cursor: pointer;
+  outline: 3px solid green;
+}
+
+#startButton:hover {
+  background-color: #0A0A0A;
+}
+
+#retryButton:hover {
+  background-color: #0A0A0A;
+}
+
+/* Additional text styling */
+#contact {
+  margin-top: 60px; /* Space between buttons and additional text */
+  color: green; /* Text color */
+  text-align: center; /* Center the text */
+  font-size: 16px; /* Font size */
+  font-family: 'Press Start 2P';
+  padding-bottom: 50px;
+  text-decoration: underline;
+}
+
+#email {
+  margin-top: 20px; /* Space between buttons and additional text */
+  color: green; /* Text color */
+  text-align: center; /* Center the text */
+  font-size: 16px; /* Font size */
+  font-family: 'Press Start 2P';
+  padding-bottom:50px;
+}
+
+#phoneNumber {
+  margin-top: 20px; /* Space between buttons and additional text */
+  color: green; /* Text color */
+  text-align: center; /* Center the text */
+  font-size: 16px; /* Font size */
+  font-family: 'Press Start 2P';
+  padding-bottom: 50px;
+}
